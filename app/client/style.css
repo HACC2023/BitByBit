@@ -4,7 +4,7 @@
 /* Set up some CSS variables to theme the application. */
 :root {
   --matr-navbar-bg: #ECECEC;
-  --matr-navbar-bg-rgb: 236, 236, 236;
+  --matr-navbar-bg-rgb: 255, 255, 255;
 }
 
 /* Change bootstrap variable values.
@@ -12,6 +12,10 @@
  */
 body {
   --bs-light-rgb: var(--matr-navbar-bg-rgb);
+}
+
+.Nav.Link {
+  color: #2C5C85;
 }
 
 /* Set the alert background on the signin and signup pages. */
