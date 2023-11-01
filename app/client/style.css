@@ -13,7 +13,7 @@
  */
 body {
   --bs-light-rgb: var(--matr-navbar-bg-rgb);
-  --bs-body-bg: #cad2c5;
+  --bs-body-bg: #ffffff;
 }
 
 body .navbar {
