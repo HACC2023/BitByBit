@@ -25,7 +25,7 @@ const Landing = () => (
 
     <Container>
       <br />
-      <h2>What is Luau Loop?</h2>
+      <h2>What is Sustainer?</h2>
       <p>
         Single-use takeout containers and food wrappers account for up to one-third
         of the debris found on Hawai’i’s shorelines! Luau Loop helps to address this
