@@ -3,8 +3,9 @@
 
 /* Set up some CSS variables to theme the application. */
 :root {
-  --matr-navbar-bg: #ECECEC;
-  --matr-navbar-bg-rgb: 255, 255, 255;
+  --matr-navbar-bg: #52796f;
+  --matr-navbar-bg-rgb: 82, 121, 111;
+  --matr-navbar-text-color: #eef6e9;
 }
 
 /* Change bootstrap variable values.
@@ -12,6 +13,11 @@
  */
 body {
   --bs-light-rgb: var(--matr-navbar-bg-rgb);
+  --bs-body-bg: #ffffff;
+}
+
+body .navbar {
+  --bs-navbar-color: var(--matr-navbar-text-color);
 }
 
 .Nav.Link {
