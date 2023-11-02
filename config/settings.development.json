@@ -11,5 +11,12 @@
     { "name": "Bicycle", "quantity": 2, "owner": "john@foo.com", "condition": "poor" },
     { "name": "Banana", "quantity": 2, "owner": "admin@foo.com", "condition": "good" },
     { "name": "Boogie Board", "quantity": 2, "owner": "admin@foo.com", "condition": "excellent" }
+  ],
+
+  "defaultContaine": [
+    {"owner": "trivera2@hawaii.edu", "size": "small"},
+    {"owner": "trivera2@goo.com", "size": "medium"},
+    {"owner": "trivera2@goo.com", "size": "large"},
+    {"owner": "trivera2@poo.com", "size": "small"}
   ]
 }
