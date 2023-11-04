@@ -3,30 +3,39 @@
 
 /* Set up some CSS variables to theme the application. */
 :root {
-  --matr-navbar-bg: #52796f;
-  --matr-navbar-bg-rgb: 82, 121, 111;
-  --matr-navbar-text-color: #eef6e9;
+  --matr-navbar-bg: #000000;
+  --matr-navbar-bg-rgb: 0, 0, 0;
+  --matr-navbar-text-color: #ffffff;
+  --matr-navbar-highlight-text: #e5ddb8;
+  --primary: #fff;
 }
 
 /* Change bootstrap variable values.
  See https://getbootstrap.com/docs/5.2/customize/css-variables/
  */
 body {
-  --bs-light-rgb: var(--matr-navbar-bg-rgb);
+  --bs-dark: var(--matr-navbar-bg);
+  --bs-dark-rgb: var(--matr-navbar-bg-rgb);
   --bs-body-bg: #ffffff;
 }
 
 body .navbar {
+  --bs-navbar-active-color: var(--matr-navbar-highlight-text);
+  --bs-navbar-brand-color: var(--matr-navbar-text-color);
+  --bs-navbar-brand-hover-color: var(--matr-navbar-highlight-text);
   --bs-navbar-color: var(--matr-navbar-text-color);
+  --bs-navbar-hover-color: var(--matr-navbar-highlight-text);
 }
 
 .Nav.Link {
-  color: #2C5C85;
+  color: #009a53;
 }
 
 /* Set the alert background on the signin and signup pages. */
 #signin-page .alert-light, #signup-page .alert-light {
   --bs-alert-bg: var(--matr-navbar-bg);
+  --bs-alert-color: var(--matr-navbar-text-color);
+  --bs-link-color-rgb: var(--matr-navbar-text-color);
 }
 
 /* Define custom styles */
@@ -35,4 +44,54 @@ body .navbar {
   color: var(--bs-dark);
   padding-top: 10px;
   padding-bottom: 20px;
+}
+
+footer, footer a {
+  color: var(--matr-navbar-text-color);
+}
+
+.landing-part1 {
+  background: url('/images/pexels-mali-maeder-802221.jpg') fixed center;
+  background-size: cover;
+  color: white;
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+}
+
+.landing-part2 {
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Buttons */
+.btn-outline-light {
+  font-size: 20px !important;
+  padding: 12px 26px !important;
+  transition: all 0.3s ease-out !important;
+}
+
+.btn-light {
+  font-size: 20px !important;
+  padding: 12px 26px !important;
+  transition: all 0.3s ease-out !important;
+}
+
+.btn:hover {
+  transition: all 0.3s ease-out !important;
+  background: #fff !important;
+  color: #242424 !important;
+  transition: 250ms !important;
+}
+
+.navbar-toggler{
+  color: white !important;
+  background-color: white !important;
 }

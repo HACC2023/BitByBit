@@ -4,7 +4,7 @@ import { useTracker } from 'meteor/react-meteor-data';
 import { NavLink } from 'react-router-dom';
 import { Roles } from 'meteor/alanning:roles';
 import { Col, Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
-import { BoxArrowRight, PersonFill, PersonPlusFill } from 'react-bootstrap-icons';
+import { BoxArrowRight, PersonFill, PersonPlusFill, Recycle } from 'react-bootstrap-icons';
 
 const NavBar = () => {
   // useTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker
@@ -13,12 +13,13 @@ const NavBar = () => {
   }), []);
 
   return (
-    <Navbar bg="light" expand="sm">
+    <Navbar bg="dark" expand="sm">
       <Container>
         <Col lg={1} className="justify-content-start" />
         <Col lg={8} className="ps-3 justify-content-center text-center">
           <Navbar.Brand as={NavLink} to="/">
-            <h2>Sustainer</h2>
+            {/* eslint-disable-next-line react/style-prop-object */}
+            <h2>Sustainer <Recycle /></h2>
           </Navbar.Brand>
         </Col>
         <Col lg={1} className="justify-content-end">
