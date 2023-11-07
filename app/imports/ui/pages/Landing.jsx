@@ -24,8 +24,9 @@ const Landing = () => (
         </Row>
       </Container>
     </div>
+
     <div className="landing-part2">
-      <Container>
+      <Container className="my-md-auto my-sm-auto my-lg-auto mx-sm-auto">
         <Row>
           <Col>
             <h2>What is Sustainer?</h2>

@@ -15,14 +15,13 @@ const NavBar = () => {
   return (
     <Navbar bg="dark" expand="sm">
       <Container>
-        <Col lg={1} className="justify-content-start" />
-        <Col lg={8} className="ps-3 justify-content-center text-center">
+        <Col lg={{ span: 8, offset: 2 }} md={{ span: 6, offset: 3 }} xs={4} className="justify-content-center text-center">
           <Navbar.Brand as={NavLink} to="/">
             {/* eslint-disable-next-line react/style-prop-object */}
-            <h2>Sustainer <Recycle /></h2>
+            <h2 className="mt-3 mt-sm-4 mb-0">Sustainer <Recycle /></h2>
           </Navbar.Brand>
         </Col>
-        <Col lg={1} className="justify-content-end">
+        <Col lg={{ span: 1 }} md={{ span: 2, offset: 1 }} xs={2} className="justify-content-end">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
             <Nav>
