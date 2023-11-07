@@ -13,7 +13,7 @@
     { "name": "Boogie Board", "quantity": 2, "owner": "admin@foo.com", "condition": "excellent" }
   ],
 
-  "defaultContaine": [
+  "defaultContainer": [
     {"owner": "trivera2@hawaii.edu", "size": "small"},
     {"owner": "trivera2@goo.com", "size": "medium"},
     {"owner": "trivera2@goo.com", "size": "large"},
