@@ -65,6 +65,7 @@ footer, footer a {
 }
 
 .landing-part2 {
+  background-color: darkgray;
   height: 30vh;
   display: flex;
   align-items: center;
