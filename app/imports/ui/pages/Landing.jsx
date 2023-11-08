@@ -6,8 +6,8 @@ import Footer from '../components/Footer';
 const Landing = () => (
   <>
     <div className="landing-part1">
-      <Container id="landing-page" className="py-3 text-center">
-        <Row>
+      <Container id="landing-page" className="mt-5 text-center">
+        <Row className="mt-2 pt-4 mb-2 pb-0 mt-sm-0 pt-sm-0 mb-sm-auto pb-sm-0">
           <Col>
             <h2 className="text-center">What is Sustainer?</h2>
             <p>
@@ -19,9 +19,9 @@ const Landing = () => (
           </Col>
         </Row>
       </Container>
-      <Container className="py-lg-3 py-sm-0" />
-      <Container className="py-lg-3">
-        <Row className="justify-content-center my-sm-auto pb-sm-2">
+      <Container className="py-sm-3 py-0" />
+      <Container className="my-3 my-sm-0">
+        <Row className="justify-content-center mb-2 pb-0 mt-sm-0 pt-sm-0 mb-sm-auto pb-sm-0">
           <Col className="g-0" xs="auto">
             <Button className="rounded-0" variant="outline-light" size="lg" href="/signin">
               Sign In

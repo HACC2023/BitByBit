@@ -3,8 +3,8 @@ import { Card, Col, Container, Row } from 'react-bootstrap';
 
 /** The Footer appears at the bottom of every page. Rendered by the App Layout component. */
 const Footer = () => (
-  <footer className="mt-auto py-lg-2 py-sm-2 mission-footer">
-    <Container className="mt-auto pt-4 text-center">
+  <footer className="mt-5 py-5 mt-sm-2 py-sm-2 mission-footer">
+    <Container className="mt-5 pt-5 mt-sm-0 pt-sm-0 mt-lg-1 pt-lg-0 text-center">
       <h1 className="pb-lg-3">Our Mission</h1>
       <Row className="justify-content-center">
         <Col lg="auto" md="auto" xs="auto">
