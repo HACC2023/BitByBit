@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Button, Row, Col } from 'react-bootstrap';
+import QrCodeScanner from '../components/QRCodeScanner';
 
 /* A simple static component to render some text for the landing page. */
 const Landing = () => (
@@ -21,6 +22,11 @@ const Landing = () => (
           </Button>
         </Col>
       </Row>
+      <div>
+        <input type="text" id="text-input" placeholder="Enter text or URL" />
+      </div>
+
+      <QrCodeScanner />
     </Container>
 
     <Container>
