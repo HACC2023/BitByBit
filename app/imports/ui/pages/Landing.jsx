@@ -6,9 +6,9 @@ import Footer from '../components/Footer';
 const Landing = () => (
   <>
     <div className="landing-part1">
-      <Container id="landing-page" className="mt-5 text-center">
-        <Row className="mt-2 pt-4 mb-2 pb-0 mt-sm-0 pt-sm-0 mb-sm-auto pb-sm-0">
-          <Col>
+      <Container id="landing-page" className="mt-5 mt-sm-0 text-center">
+        <Row className="mt-5 pt-4 mb-0 pb-0 mt-sm-0 pt-sm-0 mb-sm-auto pb-sm-0">
+          <Col className="mt-5 pt-4 mb-3 mb-md-auto mt-md-auto pt-md-0">
             <h2 className="text-center">What is Sustainer?</h2>
             <p>
               {/* eslint-disable-next-line max-len */}
@@ -19,15 +19,14 @@ const Landing = () => (
           </Col>
         </Row>
       </Container>
-      <Container className="py-sm-3 py-0" />
-      <Container className="my-3 my-sm-0">
-        <Row className="justify-content-center mb-2 pb-0 mt-sm-0 pt-sm-0 mb-sm-auto pb-sm-0">
-          <Col className="g-0" xs="auto">
+      <Container className="mb-5 my-md-4 mb-md-0">
+        <Row className="justify-content-center mb-5 pb-4 mt-sm-0 pt-sm-0 mb-sm-auto pb-sm-0">
+          <Col className="mb-5 mb-md-0 g-0" xs="auto">
             <Button className="rounded-0" variant="outline-light" size="lg" href="/signin">
               Sign In
             </Button>
           </Col>
-          <Col className="g-0" xs="auto">
+          <Col className="mb-5 g-0" xs="auto">
             <Button className="rounded-0" variant="light" size="lg" href="/signup">
               Register
             </Button>

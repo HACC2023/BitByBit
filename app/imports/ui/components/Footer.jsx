@@ -6,7 +6,7 @@ const Footer = () => (
   <footer className="mt-5 py-5 mt-sm-2 py-sm-2 mission-footer">
     <Container className="mt-5 pt-5 mt-sm-0 pt-sm-0 mt-lg-1 pt-lg-0 text-center">
       <h1 className="pb-lg-3">Our Mission</h1>
-      <Row className="justify-content-center">
+      <Row className="justify-content-center mb-5 mb-md-0">
         <Col lg="auto" md="auto" xs="auto">
           <Card className="mission-card rounded-0" style={{ width: '14em' }}>
             <Card.Body>
