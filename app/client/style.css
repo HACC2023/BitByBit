@@ -64,9 +64,9 @@ footer, footer a {
   object-fit: contain;
 }
 
-.landing-part2 {
-  background-color: darkgray;
-  height: 30vh;
+.mission-footer {
+  color: black;
+  height: 40vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,4 +95,12 @@ footer, footer a {
 .navbar-toggler{
   color: white !important;
   background-color: white !important;
+}
+
+/* card */
+.mission-card:hover {
+  transition: all 0.3s ease-out !important;
+  background: #fff !important;
+  color: #242424 !important;
+  transition: 250ms !important;
 }
