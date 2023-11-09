@@ -1,27 +1,36 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { Chart as ChartJS } from 'chart.js/auto';
+import {
+  Chart as ChartJS,
+  ArcElement,
+  Tooltip,
+  Legend,
+} from 'chart.js';
+import { Doughnut } from 'react-chartjs-2';
 
-/** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
-const PieChart = ({ stuff }) => (
-  <tr>
-    <td>{stuff.name}</td>
-    <td>{stuff.quantity}</td>
-    <td>{stuff.condition}</td>
-    <td>
-      <Link to={`/edit/${stuff._id}`}>Edit</Link>
-    </td>
-  </tr>
-);
+ChartJS.register(ArcElement, Tooltip, Legend);
 
-// Require a document to be passed to this component.
-PieChart.propTypes = {
-  stuff: PropTypes.shape({
-    name: PropTypes.string,
-    quantity: PropTypes.number,
-    condition: PropTypes.string,
-    _id: PropTypes.string,
-  }).isRequired,
+const data = {
+  labels: [
+    '95%',
+  ],
+  datasets: [{
+    label: 'My First Dataset',
+    data: [95, 5],
+    backgroundColor: [
+      'rgb(0, 219, 0)',
+      'rgb(256, 256, 256)',
+    ],
+    hoverOffset: 4,
+  }],
 };
 
-export default PieChart;
+const options = {
+  aspectRatio: 3,
+};
+
+/** Renders a doughnut pie chart with data. */
+const PieChartStats = () => (
+  <Doughnut data={data} options={options} />
+);
+
+export default PieChartStats;

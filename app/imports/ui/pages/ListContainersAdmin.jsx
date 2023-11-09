@@ -5,6 +5,7 @@ import { Col, Container, Row, Table } from 'react-bootstrap';
 import { Containers } from '../../api/container/Containers';
 import LoadingSpinner from '../components/LoadingSpinner';
 import ContainerAdmin from '../components/ContainerAdmin';
+import PieChartStats from '../components/PieChartStats';
 
 /* Renders a table containing all the Container documents. Use <ContainerAdmin> to render each row. */
 const ListContainersAdmin = () => {
@@ -39,6 +40,12 @@ const ListContainersAdmin = () => {
             </tbody>
           </Table>
         </Col>
+      </Row>
+      <Row className="justify-content-center">
+        <Container className="py-3 text-center">
+          <h2>Container Retention Rate</h2>
+          <PieChartStats />
+        </Container>
       </Row>
     </Container>
   ) : <LoadingSpinner />);
