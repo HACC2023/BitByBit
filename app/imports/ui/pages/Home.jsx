@@ -9,7 +9,7 @@ const Home = () => (
       <Container className="my-5 mb-0 my-md-4 mb-md-4">
         <Row className="justify-content-center mt-2 pb-2 mt-sm-0 pt-sm-0 mb-sm-auto pb-sm-0">
           <Col className="mb-5 mb-md-0" xs="auto">
-            <Button className="rounded-0" variant="outline-light" size="lg" href="/add">
+            <Button className="rounded-0" variant="outline-light" size="lg" href="/qrcode">
               Generate QR Code
             </Button>
           </Col>
