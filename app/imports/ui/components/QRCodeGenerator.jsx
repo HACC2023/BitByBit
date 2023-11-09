@@ -1,14 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import qrcode from 'qrcode';
+import { Meteor } from 'meteor/meteor';
 
 const QRCodeGenerator = () => {
-  const [text, setText] = useState('');
   const [qrCode, setQRCode] = useState('');
 
   useEffect(() => {
-    if (text) {
+    const userId = Meteor.userId();
+
+    if (userId) {
+      // Generate the QR code based on the user ID
+      const userQrText = `${userId}`;
+
       // Use the toDataURL method from the qrcode library
-      qrcode.toDataURL(text, (err, dataUrl) => {
+      qrcode.toDataURL(userQrText, (err, dataUrl) => {
         if (err) {
           // eslint-disable-next-line no-console
           console.error(err);
@@ -19,17 +24,11 @@ const QRCodeGenerator = () => {
     } else {
       setQRCode('');
     }
-  }, [text]);
+  }, []);
 
   return (
     <div>
-      <h1>QR Code Generator</h1>
-      <input
-        type="text"
-        placeholder="Enter text or URL"
-        value={text}
-        onChange={(e) => setText(e.target.value)}
-      />
+      <h1>User QR Code</h1>
       <div id="qrcode">
         {qrCode && <img src={qrCode} alt="QR Code" />}
       </div>
