@@ -30,7 +30,7 @@ const QRCodeGenerator = () => {
     <div>
       <h1>User QR Code</h1>
       <div id="qrcode">
-        {qrCode && <img src={qrCode} alt="QR Code" />}
+        {qrCode && <img src={qrCode} alt="QR Code" width="500px" />}
       </div>
     </div>
   );
