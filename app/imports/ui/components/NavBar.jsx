@@ -40,6 +40,13 @@ const NavBar = () => {
                 </NavDropdown>
               ) : (
                 <NavDropdown id="navbar-current-user" title={currentUser}>
+                  {Roles.userIsInRole(Meteor.userId(), 'user') ? ([
+                    <NavDropdown.Item id="add-stuff-nav" as={NavLink} to="/add" key="add">Add Container</NavDropdown.Item>,
+                    <NavDropdown.Item id="list-stuff-nav" as={NavLink} to="/list" key="list">List Stuff</NavDropdown.Item>,
+                  ]) : ''}
+                  {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
+                    <NavDropdown.Item id="list-stuff-admin-nav" as={NavLink} to="/admin" key="admin">Admin</NavDropdown.Item>
+                  ) : ''}
                   <NavDropdown.Item id="navbar-sign-out" as={NavLink} to="/signout">
                     <BoxArrowRight />
                     {' '}
@@ -48,13 +55,6 @@ const NavBar = () => {
                   </NavDropdown.Item>
                 </NavDropdown>
               )}
-              {currentUser ? ([
-                <Nav.Link id="add-stuff-nav" as={NavLink} to="/add" key="add">Add Stuff</Nav.Link>,
-                <Nav.Link id="list-stuff-nav" as={NavLink} to="/list" key="list">List Stuff</Nav.Link>,
-              ]) : ''}
-              {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
-                <Nav.Link id="list-stuff-admin-nav" as={NavLink} to="/admin" key="admin">Admin</Nav.Link>
-              ) : ''}
             </Nav>
           </Navbar.Collapse>
         </Col>
