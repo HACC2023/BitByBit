@@ -52,9 +52,10 @@ const NavBar = () => {
                 <Nav.Link id="add-stuff-nav" as={NavLink} to="/add" key="add">Add Stuff</Nav.Link>,
                 <Nav.Link id="list-stuff-nav" as={NavLink} to="/list" key="list">List Stuff</Nav.Link>,
               ]) : ''}
-              {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
-                <Nav.Link id="list-stuff-admin-nav" as={NavLink} to="/admin" key="admin">Admin</Nav.Link>
-              ) : ''}
+              {Roles.userIsInRole(Meteor.userId(), 'admin') ? ([
+                <Nav.Link id="list-containers-admin" as={NavLink} to="/admin-list" key="admin">Containers List</Nav.Link>,
+                <Nav.Link id="scan-containers" as={NavLink} to="/scan" key="admin">Scan Containers</Nav.Link>,
+              ]) : ''}
             </Nav>
           </Navbar.Collapse>
         </Col>
