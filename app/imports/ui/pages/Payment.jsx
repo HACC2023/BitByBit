@@ -8,6 +8,7 @@ const App = () => (
     style={{
       background: 'url(https://mdbcdn.b-cdn.net/img/Photos/Others/background3.webp) no-repeat center center fixed',
       backgroundSize: 'cover',
+      height: '80vh', // Set the height to 100% of the viewport height
     }}
   >
     <Row className="d-flex justify-content-center">
