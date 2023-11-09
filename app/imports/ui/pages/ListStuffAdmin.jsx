@@ -6,7 +6,7 @@ import { Stuffs } from '../../api/stuff/Stuff';
 import StuffItemAdmin from '../components/StuffItemAdmin';
 import LoadingSpinner from '../components/LoadingSpinner';
 
-/* Renders a table containing all of the Stuff documents. Use <StuffItemAdmin> to render each row. */
+/* Renders a table containing all the Stuff documents. Use <StuffItemAdmin> to render each row. */
 const ListStuffAdmin = () => {
   // useTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker
   const { stuffs, ready } = useTracker(() => {
