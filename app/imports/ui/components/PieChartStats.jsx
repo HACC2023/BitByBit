@@ -14,7 +14,7 @@ const data = {
     '95%',
   ],
   datasets: [{
-    label: 'My First Dataset',
+    label: 'Container Retention Rate:',
     data: [95, 5],
     backgroundColor: [
       'rgb(0, 219, 0)',
