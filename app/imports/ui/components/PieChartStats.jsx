@@ -9,13 +9,17 @@ import { Doughnut } from 'react-chartjs-2';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
+// Count the number of containers in the container DB
+
+// Create a percentage
+// Data for the pie chart
 const data = {
   labels: [
     '95%',
   ],
   datasets: [{
     label: 'Container Retention Rate:',
-    data: [95, 5],
+    data: [90, 10],
     backgroundColor: [
       'rgb(0, 219, 0)',
       'rgb(256, 256, 256)',
