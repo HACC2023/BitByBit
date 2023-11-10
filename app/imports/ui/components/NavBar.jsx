@@ -16,10 +16,17 @@ const NavBar = () => {
     <Navbar bg="dark" expand="sm">
       <Container>
         <Col lg={{ span: 8, offset: 2 }} md={{ span: 6, offset: 3 }} xs={4} className="justify-content-center text-center">
-          <Navbar.Brand as={NavLink} to="/">
-            {/* eslint-disable-next-line react/style-prop-object */}
-            <h2 className="mt-3 mt-sm-4 mb-0">Sustainer <Recycle /></h2>
-          </Navbar.Brand>
+          {currentUser === '' ? (
+            <Navbar.Brand as={NavLink} to="/">
+              {/* eslint-disable-next-line react/style-prop-object */}
+              <h2 className="mt-3 mt-sm-4 mb-0">Sustainer <Recycle /></h2>
+            </Navbar.Brand>
+          ) : (
+            <Navbar.Brand as={NavLink} to="/home">
+              {/* eslint-disable-next-line react/style-prop-object */}
+              <h2 className="mt-3 mt-sm-4 mb-0">Sustainer <Recycle /></h2>
+            </Navbar.Brand>
+          )}
         </Col>
         <Col lg={{ span: 1 }} md={{ span: 2, offset: 1 }} xs={2} className="justify-content-end">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -40,6 +47,13 @@ const NavBar = () => {
                 </NavDropdown>
               ) : (
                 <NavDropdown id="navbar-current-user" title={currentUser}>
+                  {Roles.userIsInRole(Meteor.userId(), 'user') ? ([
+                    <NavDropdown.Item id="add-stuff-nav" as={NavLink} to="/add" key="add">Add Container</NavDropdown.Item>,
+                    <NavDropdown.Item id="list-stuff-nav" as={NavLink} to="/list" key="list">List Stuff</NavDropdown.Item>,
+                  ]) : ''}
+                  {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
+                    <NavDropdown.Item id="list-stuff-admin-nav" as={NavLink} to="/admin" key="admin">Admin</NavDropdown.Item>
+                  ) : ''}
                   <NavDropdown.Item id="navbar-sign-out" as={NavLink} to="/signout">
                     <BoxArrowRight />
                     {' '}

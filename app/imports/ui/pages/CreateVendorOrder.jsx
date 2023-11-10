@@ -1,33 +1,33 @@
 import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
-import { AutoForm } from 'uniforms-bootstrap5';
+import { Card, Col, Container, Row } from 'react-bootstrap';
+import { AutoForm, ErrorsField, NumField, SubmitField, TextField } from 'uniforms-bootstrap5';
 import swal from 'sweetalert';
 import { Meteor } from 'meteor/meteor';
 import SimpleSchema2Bridge from 'uniforms-bridge-simple-schema-2';
 import SimpleSchema from 'simpl-schema';
-import { Containers } from '../../api/container/Containers';
+import { VendorOrder } from '../../api/vendor/VendorOrder';
 
 // Create a schema to specify the structure of the data to appear in the form.
 const formSchema = new SimpleSchema({
-  owner: String,
-  size: {
-    type: String,
-    allowedValues: ['small', 'medium', 'large'],
-    defaultValue: 'medium',
-  },
+  firstName: String,
+  lastName: String,
+  email: String,
+  event: String,
+  location: String,
+  containers: Number,
 });
 
 const bridge = new SimpleSchema2Bridge(formSchema);
 
 /* Renders the AddStuff page for adding a document. */
-const AddContainer = () => {
+const CreateVendorOrder = () => {
 
   // On submit, insert the data.
   const submit = (data, formRef) => {
-    const { size } = data;
+    const { firstName, lastName, email, event, location, containers } = data;
     const owner = Meteor.user().email;
-    Containers.collection.insert(
-      { size, owner },
+    VendorOrder.collection.insert(
+      { firstName, lastName, email, event, location, containers, owner },
       (error) => {
         if (error) {
           swal('Error', error.message, 'error');
@@ -45,10 +45,20 @@ const AddContainer = () => {
     <Container className="py-3">
       <Row className="justify-content-center">
         <Col xs={5}>
-          <Col className="text-center"><h2>Add Container</h2></Col>
+          <Col className="text-center"><h2>Vendor Order Information</h2></Col>
           <AutoForm ref={ref => { fRef = ref; }} schema={bridge} onSubmit={data => submit(data, fRef)}>
-            <p>Generate new QR code</p>
-            <p>Scan QR code</p>
+            <Card>
+              <Card.Body>
+                <TextField name="firstName" />
+                <TextField name="lastName" />
+                <TextField name="email" />
+                <TextField name="event" />
+                <TextField name="location" />
+                <NumField name="containers" decimal={null} />
+                <SubmitField value="Submit" />
+                <ErrorsField />
+              </Card.Body>
+            </Card>
           </AutoForm>
         </Col>
       </Row>
@@ -56,4 +66,4 @@ const AddContainer = () => {
   );
 };
 
-export default AddContainer;
+export default CreateVendorOrder;
