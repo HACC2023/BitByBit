@@ -6,11 +6,11 @@ import Footer from '../components/Footer';
 const Landing = () => (
   <>
     <div className="landing-part1">
-      <Container id="landing-page" className="mt-5 mt-sm-0 text-center">
-        <Row className="mt-5 pt-4 mb-0 pb-0 mt-sm-0 pt-sm-0 mb-sm-auto pb-sm-0">
-          <Col className="mt-5 pt-4 mb-3 mb-md-auto mt-md-auto pt-md-0">
-            <h2 className="text-center">What is Sustainer?</h2>
-            <p>
+      <Container id="landing-page" className="mt-5 d-flex">
+        <Row className="mt-5 d-flex">
+          <Col className="my-5">
+            <h2 className="mt-5 mt-sm-2 text-center">What is Sustainer?</h2>
+            <p className="text-center">
               {/* eslint-disable-next-line max-len */}
               Single-use takeout containers and food wrappers make up a significant portion—up to one-third—of the debris discovered along Hawai’i&apos;s shorelines. Sustainer is dedicated to tackling this environmental challenge by
               providing a convenient and user-friendly reusable takeout container system. Our aim is to contribute to reducing this prevalent waste and eliminating debrees along Hawai’i&apos;s coastal areas. Join us in making a positive
@@ -19,6 +19,19 @@ const Landing = () => (
           </Col>
         </Row>
       </Container>
+      {/* <Container id="landing-page" className="mt-5 mt-sm-0 text-center"> */}
+      {/*  <Row className="mt-5 pt-4 mb-0 pb-0 mt-sm-0 pt-sm-0 mb-sm-auto pb-sm-0"> */}
+      {/*    <Col className="mt-5 pt-4 mb-3 mb-md-auto mt-md-auto pt-md-0"> */}
+      {/*      <h2 className="text-center">What is Sustainer?</h2> */}
+      {/*      <p> */}
+      {/*        /!* eslint-disable-next-line max-len *!/ */}
+      {/*        Single-use takeout containers and food wrappers make up a significant portion—up to one-third—of the debris discovered along Hawai’i&apos;s shorelines. Sustainer is dedicated to tackling this environmental challenge by */}
+      {/*        providing a convenient and user-friendly reusable takeout container system. Our aim is to contribute to reducing this prevalent waste and eliminating debrees along Hawai’i&apos;s coastal areas. Join us in making a positive */}
+      {/*        impact by adopting our sustainable solution for takeout packaging. */}
+      {/*      </p> */}
+      {/*    </Col> */}
+      {/*  </Row> */}
+      {/* </Container> */}
       <Container className="mb-5 my-md-4 mb-md-0">
         <Row className="justify-content-center mb-5 pb-4 mt-sm-0 pt-sm-0 mb-sm-auto pb-sm-0">
           <Col className="mb-5 mb-md-0 g-0" xs="auto">
