@@ -33,6 +33,7 @@ const ListContainersAdmin = () => {
                 <th>ID #</th>
                 <th>Size</th>
                 <th>Owner</th>
+                <th>Scan</th>
               </tr>
             </thead>
             <tbody>

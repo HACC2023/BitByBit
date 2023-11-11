@@ -42,7 +42,7 @@ const App = () => {
           <Route path="/add" element={<ProtectedRoute><AddContainer /></ProtectedRoute>} />
           <Route path="/qrcode" element={<ProtectedRoute><QRCodeGenerator /></ProtectedRoute>} />
           <Route path="/vendororder" element={<ProtectedRoute><AddVendorOrder /></ProtectedRoute>} />
-          <Route path="/scan" element={<ProtectedRoute><TransferContainer /></ProtectedRoute>} />
+          <Route path="/scan/:_id" element={<ProtectedRoute><TransferContainer /></ProtectedRoute>} />
           <Route path="/admin-list" element={<AdminProtectedRoute ready={ready}><ListContainersAdmin /></AdminProtectedRoute>} />
           <Route path="/notauthorized" element={<NotAuthorized />} />
           <Route path="*" element={<NotFound />} />

@@ -1,10 +1,11 @@
 import React from 'react';
 import swal from 'sweetalert';
 import { Card, Col, Container, Row } from 'react-bootstrap';
-import { AutoForm, ErrorsField, HiddenField, SelectField, SubmitField, TextField } from 'uniforms-bootstrap5';
+import { AutoForm, ErrorsField, HiddenField, SelectField, SubmitField } from 'uniforms-bootstrap5';
 import { Meteor } from 'meteor/meteor';
 import { useTracker } from 'meteor/react-meteor-data';
 import SimpleSchema2Bridge from 'uniforms-bridge-simple-schema-2';
+import { _ } from 'meteor/underscore';
 import { useParams } from 'react-router';
 import LoadingSpinner from '../components/LoadingSpinner';
 import { Containers } from '../../api/container/Containers';
@@ -19,6 +20,9 @@ const bridge = new SimpleSchema2Bridge(Containers.schema);
 
 /* Renders the page for editing a single document. */
 const EditContainers = () => {
+  const emailsList = _.pluck(Meteor.users.find().fetch(), 'email');
+  console.log(emailsList);
+
   // Get the documentID from the URL field. See imports/ui/layouts/App.jsx for the route containing :_id.
   const { _id } = useParams();
   // console.log('EditContainers', _id);
@@ -40,7 +44,6 @@ const EditContainers = () => {
   const submit = (scannedQR) => {
     const { owner } = scannedQR;
     const user = Meteor.users.findOne(_id);
-    const foundContainer = Containers.collection.findOne(_id);
     Containers.collection.update(_id, { $set: { owner } }, (error) => (error ?
       swal('Error', error.message, 'error') :
       swal(`Container now belongs to ${user.firstName} ${user.lastName})`, 'Scanned successfully!', 'success')));
@@ -54,10 +57,8 @@ const EditContainers = () => {
           <AutoForm schema={bridge} onSubmit={data => submit(data)} model={doc}>
             <Card>
               <Card.Body>
-                <h2>Which container to scan?</h2>
-                <SelectField name="uniqueID" />
                 <h2>Who transferring to?</h2>
-                <TextField name="owner" />
+                <SelectField name="owner" options={emailsList} />
                 <SubmitField value="Submit" />
                 <ErrorsField />
                 <HiddenField name="owner" />
