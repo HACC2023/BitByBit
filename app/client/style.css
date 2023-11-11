@@ -54,7 +54,7 @@ footer, footer a {
   background: url('/images/pexels-mali-maeder-802221.jpg') fixed center;
   background-size: cover;
   color: white;
-  height: 50vh;
+  min-height: 60vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -66,9 +66,10 @@ footer, footer a {
 
 .mission-footer {
   color: black;
-  height: 40vh;
+  padding: 4rem 0 2rem 0;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-self: center;
   justify-content: center;
 }
 
@@ -98,9 +99,14 @@ footer, footer a {
 }
 
 /* card */
-.mission-card:hover {
-  transition: all 0.3s ease-out !important;
-  background: #fff !important;
-  color: #242424 !important;
-  transition: 250ms !important;
+.mission-card {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
 }

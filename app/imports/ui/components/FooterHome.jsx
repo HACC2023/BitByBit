@@ -3,12 +3,12 @@ import { Card, Col, Container, Row } from 'react-bootstrap';
 
 /** The Footer appears at the bottom of every page. Rendered by the App Layout component. */
 const FooterHome = () => (
-  <footer className="mt-5 py-5 mt-sm-2 py-sm-2 mission-footer">
-    <Container className="mt-5 pt-5 mt-sm-0 pt-sm-0 mt-lg-1 pt-lg-0 text-center">
+  <footer>
+    <Container className="mission-footer text-center">
       <h1 className="pb-lg-3">FAQ</h1>
-      <Row className="justify-content-center mb-5 mb-md-0">
-        <Col lg="auto" md="auto" xs="auto">
-          <Card className="mission-card rounded-0" style={{ width: '14em' }}>
+      <Row xs={1} sm={2} className="justify-content-center mb-5">
+        <Col xs="auto" sm="auto" md="auto" lg="auto">
+          <Card className="mission-card" style={{ width: '14em' }}>
             <Card.Body>
               <Card.Title>How do I begin ordering?</Card.Title>
               <Card.Text>
@@ -17,7 +17,7 @@ const FooterHome = () => (
             </Card.Body>
           </Card>
         </Col>
-        <Col lg="auto" md="auto" xs="auto">
+        <Col xs="auto" sm="auto" md="auto" lg="auto">
           <Card className="mission-card rounded-0" style={{ width: '14em' }}>
             <Card.Body>
               <Card.Title>How do I pay?</Card.Title>

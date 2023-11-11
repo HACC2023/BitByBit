@@ -17,7 +17,7 @@ const NavBar = () => {
       <Container className="align-items-center py-3">
         {currentUser === '' ? (
           <Navbar.Brand as={NavLink} to="/">
-            <h2 className="mb-0">Sustainer <Recycle /></h2>
+            <h2 className="mb-0">Sustainer <Recycle/></h2>
           </Navbar.Brand>
         ) : (
           <Navbar.Brand as={NavLink} to="/home">
