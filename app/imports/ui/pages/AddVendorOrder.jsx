@@ -20,7 +20,7 @@ const formSchema = new SimpleSchema({
 const bridge = new SimpleSchema2Bridge(formSchema);
 
 /* Renders the AddStuff page for adding a document. */
-const CreateVendorOrder = () => {
+const AddVendorOrder = () => {
 
   // On submit, insert the data.
   const submit = (data, formRef) => {
@@ -66,4 +66,4 @@ const CreateVendorOrder = () => {
   );
 };
 
-export default CreateVendorOrder;
+export default AddVendorOrder;

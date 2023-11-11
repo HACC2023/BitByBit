@@ -18,5 +18,13 @@
     {"owner": "trivera2@goo.com", "size": "medium"},
     {"owner": "trivera2@goo.com", "size": "large"},
     {"owner": "trivera2@poo.com", "size": "small"}
+  ],
+
+  "defaultOrders": [
+    { "firstName": "John", "lastName": "Doe", "email": "john@foo.com", "event": "Charity", "location": "john@foo.com", "containers": "50" },
+    { "firstName": "Bob", "lastName": "Dot", "email": "john@foo.com", "event": "Fundraiser", "location": "john@foo.com", "containers": "100" },
+    { "firstName": "Hal", "lastName": "Rob", "email": "admin@foo.com", "event": "Dinner", "location": "john@foo.com", "containers": "10" },
+    { "firstName": "Jen", "lastName": "Doe", "email": "admin@foo.com", "event": "Birthday", "location": "john@foo.com", "containers": "25" }
   ]
+
 }
