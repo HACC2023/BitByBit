@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const STYLES = ['btn--primary', 'btn--outline'];
 const SIZES = ['btn--medium', 'btn--large'];
 
-export const Button = ({
+const Button = ({
 // eslint-disable-next-line react/prop-types
   children, // eslint-disable-next-line react/prop-types
   type, // eslint-disable-next-line react/prop-types

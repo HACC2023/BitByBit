@@ -14,6 +14,7 @@ const NavBar = () => {
 
   return (
     <Navbar bg="dark" expand="sm">
+      {/* ---------------Navbar Logo-------------------- */}
       <Container className="align-items-center py-3">
         {currentUser === '' ? (
           <Navbar.Brand as={NavLink} to="/">
@@ -24,6 +25,8 @@ const NavBar = () => {
             <h2 className="mb-0">Sustainer <Recycle /></h2>
           </Navbar.Brand>
         )}
+        {/* ---------------Navbar Logo End-------------------- */}
+        {/* ---------------Navbar Menu-------------------- */}
         <Col lg={{ span: 1 }} md={{ span: 2, offset: 1 }} xs={2}>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
