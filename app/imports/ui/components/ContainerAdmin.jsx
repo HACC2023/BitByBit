@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Button } from 'react-bootstrap';
 
 /** Renders a single row in the List Container (Admin) table. See pages/ListContainersAdmin.jsx. */
 const ContainerAdmin = ({ container }) => (
@@ -7,6 +8,7 @@ const ContainerAdmin = ({ container }) => (
     <td>{container._id}</td>
     <td>{container.size}</td>
     <td>{container.owner}</td>
+    <td><Button variant="danger" onClick={() => removeItem(stuff._id)}><Trash /></Button> </td>
   </tr>
 );
 

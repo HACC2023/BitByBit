@@ -14,10 +14,10 @@
   ],
 
   "defaultContainer": [
-    {"owner": "trivera2@hawaii.edu", "size": "small"},
-    {"owner": "trivera2@goo.com", "size": "medium"},
-    {"owner": "trivera2@goo.com", "size": "large"},
-    {"owner": "trivera2@poo.com", "size": "small"}
+    {"owner": "trivera2@hawaii.edu", "uniqueID": "abc1", "size": "small"},
+    {"owner": "trivera2@goo.com", "uniqueID": "def2", "size": "medium"},
+    {"owner": "trivera2@goo.com", "uniqueID": "ghi3", "size": "large"},
+    {"owner": "trivera2@poo.com", "uniqueID": "jkl4", "size": "small"}
   ],
 
   "defaultOrders": [

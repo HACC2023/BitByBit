@@ -6,10 +6,7 @@ import { Roles } from 'meteor/alanning:roles';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Landing from '../pages/Landing';
 import ListStuff from '../pages/ListStuff';
-// import ListStuffAdmin from '../pages/ListStuffAdmin';
-// import AddStuff from '../pages/AddStuff';
 import NavBar from '../components/NavBar';
-import EditStuff from '../pages/EditStuff';
 import NotFound from '../pages/NotFound';
 import SignUp from '../pages/SignUp';
 import SignOut from '../pages/SignOut';
@@ -21,6 +18,7 @@ import AddContainer from '../pages/AddContainer';
 import Home from '../pages/Home';
 import ListContainersAdmin from '../pages/ListContainersAdmin';
 import QRCodeGenerator from '../components/QRCodeGenerator';
+import TransferContainer from '../pages/TransferContainer';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => {
@@ -44,7 +42,7 @@ const App = () => {
           <Route path="/add" element={<ProtectedRoute><AddContainer /></ProtectedRoute>} />
           <Route path="/qrcode" element={<ProtectedRoute><QRCodeGenerator /></ProtectedRoute>} />
           <Route path="/vendororder" element={<ProtectedRoute><AddVendorOrder /></ProtectedRoute>} />
-          <Route path="/edit/:_id" element={<ProtectedRoute><EditStuff /></ProtectedRoute>} />
+          <Route path="/scan" element={<ProtectedRoute><TransferContainer /></ProtectedRoute>} />
           <Route path="/admin-list" element={<AdminProtectedRoute ready={ready}><ListContainersAdmin /></AdminProtectedRoute>} />
           <Route path="/notauthorized" element={<NotAuthorized />} />
           <Route path="*" element={<NotFound />} />
