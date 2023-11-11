@@ -16,7 +16,7 @@ import SignOut from '../pages/SignOut';
 import SignIn from '../pages/SignIn';
 import NotAuthorized from '../pages/NotAuthorized';
 import LoadingSpinner from '../components/LoadingSpinner';
-import CreateVendorOrder from '../pages/CreateVendorOrder';
+import AddVendorOrder from '../pages/AddVendorOrder';
 import AddContainer from '../pages/AddContainer';
 import Home from '../pages/Home';
 import ListContainersAdmin from '../pages/ListContainersAdmin';
@@ -43,7 +43,7 @@ const App = () => {
           <Route path="/list" element={<ProtectedRoute><ListStuff /></ProtectedRoute>} />
           <Route path="/add" element={<ProtectedRoute><AddContainer /></ProtectedRoute>} />
           <Route path="/qrcode" element={<ProtectedRoute><QRCodeGenerator /></ProtectedRoute>} />
-          <Route path="/vendororder" element={<ProtectedRoute><CreateVendorOrder /></ProtectedRoute>} />
+          <Route path="/vendororder" element={<ProtectedRoute><AddVendorOrder /></ProtectedRoute>} />
           <Route path="/edit/:_id" element={<ProtectedRoute><EditStuff /></ProtectedRoute>} />
           <Route path="/admin-list" element={<AdminProtectedRoute ready={ready}><ListContainersAdmin /></AdminProtectedRoute>} />
           <Route path="/notauthorized" element={<NotAuthorized />} />

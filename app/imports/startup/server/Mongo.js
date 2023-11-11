@@ -1,6 +1,7 @@
 import { Meteor } from 'meteor/meteor';
 import { Stuffs } from '../../api/stuff/Stuff.js';
 import { Containers } from '../../api/container/Containers.js';
+import { VendorOrder } from '../../api/vendor/VendorOrder';
 
 /* eslint-disable no-console */
 
@@ -29,5 +30,18 @@ if (Containers.collection.find().count() === 0) {
   if (Meteor.settings.defaultData) {
     console.log('Creating default containers.');
     Meteor.settings.defaultContainer.forEach(data => addContainer(data));
+  }
+}
+
+const addVendorOrder = (data) => {
+  console.log(`  Adding: ${data.owner} (${data.size})`);
+  VendorOrder.collection.insert(data);
+};
+
+// Initialize the StuffsCollection if empty.
+if (VendorOrder.collection.find().count() === 0) {
+  if (Meteor.settings.defaultData) {
+    console.log('Creating default containers.');
+    Meteor.settings.defaultOrders.forEach(data => addVendorOrder(data));
   }
 }
