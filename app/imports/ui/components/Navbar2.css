@@ -25,6 +25,7 @@
   text-decoration: none;
   font-size: 2rem;
   display: flex;
+  margin-left: 20px;
   align-items: center;
 }
 
@@ -98,6 +99,7 @@
     z-index: 1;
     margin-left: 0;
     justify-content: start;
+    padding-left: 0;
   }
 
   .nav-links {
@@ -118,6 +120,7 @@
     top: 0;
     left: 0;
     transform: translate(25%, 50%);
+    margin-left: 0;
   }
 
   .menu-icon {
