@@ -20,7 +20,7 @@ const bridge = new SimpleSchema2Bridge(Containers.schema);
 
 /* Renders the page for editing a single document. */
 const EditContainers = () => {
-  const emailsList = _.pluck(Meteor.users.find().fetch(), 'email');
+  const emailsList = _.pluck(Meteor.users.find().fetch(), 'emails');
   console.log(emailsList);
 
   // Get the documentID from the URL field. See imports/ui/layouts/App.jsx for the route containing :_id.

@@ -13,7 +13,6 @@ class ContainersCollection {
     // Define the structure of each document in the collection.
     this.schema = new SimpleSchema({
       owner: String,
-      uniqueID: String,
       size: {
         type: String,
         allowedValues: ['small', 'medium', 'large'],
