@@ -8,13 +8,7 @@
     * [Data Model](#data-model)
     * [Flowchart](#application-flowchart)
 * [User Guide](#user-guide-mockups)
-* [Development History](#development-history)
-    * [Milestone 1](#milestone-1-identifying-basic-user-needs--mockup-page-development)
-    * [Milestone 2](#milestone-2-expected-upcoming-issues)
 * [Team](#team)
-* [Developer Guide](#developer-guide)
-* [Community Feedback](#community-feedback)
-* [Deployment](#deployment)
 
 ## Overview
 
@@ -113,25 +107,6 @@ There is also a percentage graphic to show the retention rate of the containers.
   <img width="400px" src="doc/yellow-warning.png" alt="" class="img-thumbnail p-3" >
   <img width="400px" src="doc/red-warning.png" alt="" class="img p-3" >
 </div>
-
-## Development History
-
-The following describes the process of building the app from the design process to code implementation and deployment. Our progress is as follows:
-
-## Milestone 1: Identifying Basic User Needs & Mockup Page Development
-
-The goal of Milestone 1 was to create a work flow for the app to identify its main features to solve the problem of user accountability and container retention rate. We focused on creating a mockup of the app's UI.
-
-Milestone 1 was managed using [Sustainer GitHub Project Board M1](https://github.com/orgs/sus-tainer/projects/1/views/2):
-
-<img src="doc/M1.png" alt="">
-
-## Milestone 2: Expected Upcoming Issues
-
-We expect the following issues to continue toward Milestone 2:
-
-[Sustainer GitHub Project Board M2](https://github.com/orgs/sus-tainer/projects/2/views/2):
-
 
 ## Team BitByBit
 
