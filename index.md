@@ -54,7 +54,7 @@ The fields labeled **PK** (Email for Accounts) indicate that this is a unique va
 <img src="doc/sustainer-flow-chart.png" alt="" style="padding-top: 5px; padding-bottom: 5px">
 
 
-## User Guide (Mockups)
+## User Guide
 
 This section provides a mockup walkthrough of the Sustainer user interface and its capabilities.
 
