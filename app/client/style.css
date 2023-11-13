@@ -54,7 +54,7 @@ footer, footer a {
   //background: url('/images/pexels-mali-maeder-802221.jpg') fixed center;
   background-size: cover;
   color: white;
-  height: 50vh;
+  min-height: 60vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -63,10 +63,18 @@ footer, footer a {
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
   object-fit: contain;
 }
+<<<<<<< HEAD
 .landing-part2 {
   height: 30vh;
+=======
+
+.mission-footer {
+  color: black;
+  padding: 4rem 0 2rem 0;
+>>>>>>> main
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-self: center;
   justify-content: center;
 }
 /* Buttons */
@@ -91,3 +99,63 @@ footer, footer a {
   color: white !important;
   background-color: white !important;
 }
+<<<<<<< HEAD
+=======
+
+/* card */
+.mission-card {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.home,
+.services,
+.products,
+.sign-up {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.services {
+  background-image: url('/images/img-2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.products {
+  background-image: url('/images/img-1.jpg');
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.sign-up {
+  background-image: url('/images/img-8.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+>>>>>>> main

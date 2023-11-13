@@ -1,7 +1,9 @@
 {
   "defaultAccounts": [
-    { "email": "admin@foo.com", "password": "changeme", "role": "admin" },
-    { "email": "john@foo.com", "password": "changeme" }
+    {"firstName": "Thomas", "lastName": "Foo", "email": "trivera2@hawaii.edu", "password": "changeme", "role": "admin"},
+    {"firstName": "Jaren", "lastName": "Foo", "email": "trivera2@foo.com", "password": "changeme", "role": "moderator"},
+    {"firstName": "Aaron", "lastName": "Foo", "email": "trivera2@goo.com", "password": "changeme", "role": "vendor"},
+    {"firstName": "Sage", "lastName": "Foo", "email": "trivera2@poo.com", "password": "changeme", "role": "user"}
   ],
 
   "defaultData": [
@@ -9,5 +11,20 @@
     { "name": "Bicycle", "quantity": 2, "owner": "john@foo.com", "condition": "poor" },
     { "name": "Banana", "quantity": 2, "owner": "admin@foo.com", "condition": "good" },
     { "name": "Boogie Board", "quantity": 2, "owner": "admin@foo.com", "condition": "excellent" }
+  ],
+
+  "defaultContainer": [
+    {"owner": "trivera2@hawaii.edu", "size": "small"},
+    {"owner": "trivera2@goo.com", "size": "medium"},
+    {"owner": "trivera2@goo.com", "size": "large"},
+    {"owner": "trivera2@poo.com", "size": "small"}
+  ],
+
+  "defaultOrders": [
+    { "firstName": "John", "lastName": "Doe", "email": "john@foo.com", "event": "Charity", "location": "john@foo.com", "containers": "50" },
+    { "firstName": "Bob", "lastName": "Dot", "email": "john@foo.com", "event": "Fundraiser", "location": "john@foo.com", "containers": "100" },
+    { "firstName": "Hal", "lastName": "Rob", "email": "admin@foo.com", "event": "Dinner", "location": "john@foo.com", "containers": "10" },
+    { "firstName": "Jen", "lastName": "Doe", "email": "admin@foo.com", "event": "Birthday", "location": "john@foo.com", "containers": "25" }
   ]
+
 }
