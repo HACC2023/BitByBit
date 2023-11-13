@@ -35,7 +35,8 @@ const SignUp = ({ location }) => {
 
   const { from } = location?.state || { from: { pathname: '/add' } };
   if (redirectToReferer) {
-    return <Navigate to={from} />;
+    // eslint-disable-next-line react/jsx-filename-extension
+    <Navigate to={from} />;
   }
 
   return (
