@@ -1,9 +1,9 @@
 {
   "defaultAccounts": [
-    {"firstName": "Thomas", "lastName": "Foo", "email": "trivera2@hawaii.edu", "password": "changeme", "role": "admin"},
-    {"firstName": "Jaren", "lastName": "Foo", "email": "trivera2@foo.com", "password": "changeme", "role": "moderator"},
-    {"firstName": "Aaron", "lastName": "Foo", "email": "trivera2@goo.com", "password": "changeme", "role": "vendor"},
-    {"firstName": "Sage", "lastName": "Foo", "email": "trivera2@poo.com", "password": "changeme", "role": "user"}
+    {"firstName": "Thomas", "lastName": "Foo", "email": "admin@foo.com, "password": "changeme", "role": "admin"},
+    {"firstName": "Jaren", "lastName": "Foo", "email": "mod@foo.com", "password": "changeme", "role": "moderator"},
+    {"firstName": "Aaron", "lastName": "Foo", "email": "burgers@foo.com", "password": "changeme", "role": "vendor"},
+    {"firstName": "Sage", "lastName": "Foo", "email": "user@foo.com", "password": "changeme", "role": "user"}
   ],
 
   "defaultData": [
