@@ -1,8 +1,10 @@
-title: meteor-application-template-react
-description: A template for quickly starting Meteor application development
+title: Sustainer
+description: A web app to order reusable takeout containers for events!
 google_analytics:
-show_downloads: true
+show_downloads: false
 theme: jekyll-theme-cayman
-
+github:
+  is_project_page: true
+  repository_url: https://github.com/HACC2023/BitByBit
 gems:
   - jekyll-mentions
