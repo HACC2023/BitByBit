@@ -44,7 +44,7 @@ const App = () => {
       style={{
         background: 'url(https://mdbcdn.b-cdn.net/img/Photos/Others/background3.webp) no-repeat center center fixed',
         backgroundSize: 'cover',
-        height: '80vh',
+        height: '100vh',
       }}
     >
       <Row className="d-flex justify-content-center">
