@@ -51,7 +51,7 @@ footer, footer a {
 }
 
 .landing-part1 {
-  //background: url('/images/pexels-mali-maeder-802221.jpg') fixed center;
+  background: url('/images/pexels-mali-maeder-802221.jpg') fixed center;
   background-size: cover;
   color: white;
   min-height: 60vh;
@@ -65,12 +65,10 @@ footer, footer a {
 }
 .landing-part2 {
   height: 30vh;
-=======
 
 .mission-footer {
   color: black;
   padding: 4rem 0 2rem 0;
->>>>>>> main
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -98,8 +96,6 @@ footer, footer a {
   color: white !important;
   background-color: white !important;
 }
-<<<<<<< HEAD
-=======
 
 /* card */
 .mission-card {
