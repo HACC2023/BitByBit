@@ -27,11 +27,8 @@ const SignIn = () => {
   };
 
   if (redirect) {
-<<<<<<< HEAD
     return <Navigate to="/" />;
-=======
     return (<Navigate to="/home" />);
->>>>>>> main
   }
 
   return (

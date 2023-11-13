@@ -13,11 +13,8 @@ import EditStuff from '../pages/EditStuff';
 import NotFound from '../pages/NotFound';
 import SignUp from '../pages/SignUp';
 import SignOut from '../pages/SignOut';
-<<<<<<< HEAD
 import Payment from '../pages/Payment';
 import NavBar from '../components/NavBar';
-=======
->>>>>>> main
 import SignIn from '../pages/SignIn';
 import NotAuthorized from '../pages/NotAuthorized';
 import LoadingSpinner from '../components/LoadingSpinner';

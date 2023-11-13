@@ -63,7 +63,6 @@ footer, footer a {
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
   object-fit: contain;
 }
-<<<<<<< HEAD
 .landing-part2 {
   height: 30vh;
 =======
@@ -115,7 +114,7 @@ footer, footer a {
   text-decoration: none;
 }
 
-* {
+  & * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -157,5 +156,4 @@ footer, footer a {
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
-}
->>>>>>> main
+}}

@@ -4,10 +4,8 @@ import { Roles } from 'meteor/alanning:roles';
 import { CreditCards } from '/imports/api/stuff/creditCards'; // Import the CreditCards collection
 
 /* eslint-disable no-console */
-
-<<<<<<< HEAD
-const createNewUser = ({ email, password, firstName, lastName, role, cardDetails }) => {
-  console.log(`Creating user ${email}.`);
+const createNewUser = { email, password, firstName, lastName, role, cardDetails } => {
+  console.log(`Creating user ${email}.`)
 
   const userId = Accounts.createUser({
     username: email,
@@ -17,8 +15,7 @@ const createNewUser = ({ email, password, firstName, lastName, role, cardDetails
       firstName: firstName,
       lastName: lastName,
     },
-=======
-const createUser = (firstName, lastName, email, password, role) => {
+const, createUser = (firstName, lastName, email, password, role) => {
   console.log(`  Creating user ${email}.`);
   const userID = Accounts.createUser({
     firstName: firstName,
@@ -26,12 +23,10 @@ const createUser = (firstName, lastName, email, password, role) => {
     email: email,
     password: password,
     role: role,
->>>>>>> main
   });
 
   if (role === 'admin') {
     Roles.createRole(role, { unlessExists: true });
-<<<<<<< HEAD
     Roles.addUsersToRoles(userId, 'admin');
   }
 
@@ -44,7 +39,6 @@ const createUser = (firstName, lastName, email, password, role) => {
       expirationDate: cardDetails.expirationDate,
       cvv: cardDetails.cvv,
     });
-=======
     Roles.addUsersToRoles(userID, 'admin');
   } else if (role === 'moderator') {
     Roles.createRole(role, { unlessExists: true });
@@ -55,9 +49,8 @@ const createUser = (firstName, lastName, email, password, role) => {
   } else if (role === 'user') {
     Roles.createRole(role, { unlessExists: true });
     Roles.addUsersToRoles(userID, 'user');
->>>>>>> main
   }
-};
+},
 
 Meteor.methods({
   createNewUser,
@@ -67,13 +60,10 @@ Meteor.methods({
 if (Meteor.users.find().count() === 0) {
   if (Meteor.settings.defaultAccounts) {
     console.log('Creating the default user(s)');
-<<<<<<< HEAD
     Meteor.settings.defaultAccounts.forEach(({ email, password, firstName, lastName, role, cardDetails }) => {
       createNewUser({ email, password, firstName, lastName, role, cardDetails });
     });
-=======
     Meteor.settings.defaultAccounts.forEach(({ firstName, lastName, email, password, role }) => createUser(firstName, lastName, email, password, role));
->>>>>>> main
   } else {
     console.log('Cannot initialize the database! Please invoke meteor with a settings file.');
   }
