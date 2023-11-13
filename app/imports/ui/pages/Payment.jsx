@@ -83,19 +83,17 @@ const App = () => {
                   onChange={(e) => setCardholderName(e.target.value)}
                 />
               </Form.Group>
+              <Form.Group className="form-outline">
+                <Form.Control
+                  type="text"
+                  size="lg"
+                  placeholder="Card Number"
+                  value={cardNumber}
+                  onChange={(e) => setCardNumber(e.target.value)}
+                />
+              </Form.Group>
               <Row className="my-4">
-                <Col xs="7">
-                  <Form.Group className="form-outline">
-                    <Form.Control
-                      type="text"
-                      size="lg"
-                      placeholder="Card Number"
-                      value={cardNumber}
-                      onChange={(e) => setCardNumber(e.target.value)}
-                    />
-                  </Form.Group>
-                </Col>
-                <Col xs="3">
+                <Col xs="6">
                   <Form.Group className="form-outline">
                     <Form.Control
                       type="text"
@@ -106,7 +104,7 @@ const App = () => {
                     />
                   </Form.Group>
                 </Col>
-                <Col xs="2">
+                <Col xs="6">
                   <Form.Group className="form-outline">
                     <Form.Control
                       type="text"
