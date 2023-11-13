@@ -9,6 +9,8 @@
     * [Flowchart](#application-flowchart)
 * [User Guide](#user-guide-mockups)
 * [Team](#team)
+* [Developer Guide](#developer-guide)
+  * [Installation](#Installation)
 
 ## Overview
 
