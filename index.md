@@ -133,9 +133,7 @@ We expect the following issues to continue toward Milestone 2:
 [Sustainer GitHub Project Board M2](https://github.com/orgs/sus-tainer/projects/2/views/2):
 
 
-## Team
-
-**[Our team contract](https://docs.google.com/document/d/14BCHuLKtjr0m7UcoQ2BcsHvO0r9Z21xhZkRsPpTkm4c/edit?usp=sharing)**
+## Team BitByBit
 
 Sustainer is designed and developed by:
 * [**Aaron Lander Ancheta**](https://github.com/aaron-ancheta) || [View Profile](https://aaron-ancheta.github.io/)
@@ -156,7 +154,7 @@ First, [install Meteor](https://www.meteor.com/install).
 
 Second, visit the [Sustainer application GitHub page](https://github.com/sus-tainer/sustainer), and click the "Use this template" button to create your own repository initialized with a copy of this application. Alternatively, you can download the sources as a zip file or make a fork of the repo.  However you do it, download a copy of the repo to your local computer.
 
-Third, cd into the sustainer/app directory and install libraries with:
+Third, cd into the BitByBit/app directory and install libraries with:
 
 ```
 $ meteor npm install
