@@ -14,7 +14,6 @@ import NotFound from '../pages/NotFound';
 import SignUp from '../pages/SignUp';
 import SignOut from '../pages/SignOut';
 import Payment from '../pages/Payment';
-import NavBar from '../components/NavBar';
 import SignIn from '../pages/SignIn';
 import NotAuthorized from '../pages/NotAuthorized';
 import LoadingSpinner from '../components/LoadingSpinner';
@@ -41,12 +40,9 @@ const App = () => {
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/signout" element={<SignOut />} />
-<<<<<<< HEAD
           <Route path="/payment" element={<Payment />} />
           <Route path="/home" element={<ProtectedRoute><Landing /></ProtectedRoute>} />
-=======
           <Route path="/home" element={<ProtectedRoute><Home /></ProtectedRoute>} />
->>>>>>> main
           <Route path="/list" element={<ProtectedRoute><ListStuff /></ProtectedRoute>} />
           <Route path="/add" element={<ProtectedRoute><AddContainer /></ProtectedRoute>} />
           <Route path="/qrcode" element={<ProtectedRoute><QRCodeGenerator /></ProtectedRoute>} />

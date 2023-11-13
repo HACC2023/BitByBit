@@ -28,7 +28,7 @@ const SignIn = () => {
 
   if (redirect) {
     return <Navigate to="/" />;
-    return (<Navigate to="/home" />);
+    return <Navigate to="/home" />;
   }
 
   return (
