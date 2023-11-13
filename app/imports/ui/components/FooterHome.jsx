@@ -5,7 +5,7 @@ import { Card, Col, Container, Row } from 'react-bootstrap';
 const FooterHome = () => (
   <footer>
     <Container className="mission-footer text-center">
-      <h1 className="pb-lg-3">FAQ</h1>
+      <h1 className="mt-3 pb-lg-3">FAQ</h1>
       <Row xs={1} sm={2} className="justify-content-center mb-5">
         <Col xs="auto" sm="auto" md="auto" lg="auto">
           <Card className="mission-card" style={{ width: '14em' }}>

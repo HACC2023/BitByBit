@@ -21,7 +21,7 @@ const NavBar = () => {
     <Navbar className="navbar">
       <Container className="navbar-container align-items-center">
         {currentUser === '' ? (
-          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+          <Link to="/" className="navbar-logo " onClick={closeMobileMenu}>
             <h2 className="mt-2">Sustainer <Recycle /></h2>
           </Link>
         ) : (
@@ -74,7 +74,7 @@ const NavBar = () => {
                       </NavLink>
                     </li>
                     <li className="nav-item">
-                      <NavLink to="/signup" className="nav-links" onClick={closeMobileMenu}>
+                      <NavLink to="/payment" className="nav-links" onClick={closeMobileMenu}>
                         Payment
                       </NavLink>
                     </li>
