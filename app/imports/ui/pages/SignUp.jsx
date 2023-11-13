@@ -12,8 +12,8 @@ const SignUp = ({ location }) => {
   const [redirectToReferer, setRedirectToRef] = useState(false);
 
   const schema = new SimpleSchema({
-    firstName: String, // Add first name field to the schema
-    lastName: String, // Add last name field to the schema
+    firstName: String,
+    lastName: String,
     email: String,
     password: {
       type: String,
@@ -41,17 +41,17 @@ const SignUp = ({ location }) => {
   return (
     <Container id="signup-page" className="py-3">
       <Row className="justify-content-center">
-        <Col xs={8}>
+        <Col xs={12} md={10} lg={8}>
           <Col className="text-center">
             <h2>Register your account</h2>
           </Col>
           <AutoForm schema={bridge} onSubmit={(data) => submit(data)}>
             <Card>
               <Card.Body>
-                <TextField name="firstName" placeholder="First Name" inputClassName="form-control-lg" />
-                <TextField name="lastName" placeholder="Last Name" inputClassName="form-control-lg" />
-                <TextField name="email" placeholder="E-mail address" inputClassName="form-control-lg" />
-                <TextField name="password" placeholder="Password" type="password" inputClassName="form-control-lg" />
+                <TextField name="firstName" placeholder="First Name" inputClassName="form-control form-control-lg mb-3" />
+                <TextField name="lastName" placeholder="Last Name" inputClassName="form-control form-control-lg mb-3" />
+                <TextField name="email" placeholder="E-mail address" inputClassName="form-control form-control-lg mb-3" />
+                <TextField name="password" placeholder="Password" type="password" inputClassName="form-control form-control-lg mb-3" />
                 <ErrorsField />
                 <SubmitField />
               </Card.Body>
