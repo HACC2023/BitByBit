@@ -4,7 +4,7 @@
     {"firstName": "Jaren", "lastName": "Foo", "email": "mod@foo.com", "password": "changeme", "role": "moderator"},
     {"firstName": "Aaron", "lastName": "Foo", "email": "burgers@foo.com", "password": "changeme", "role": "vendor"},
     {"firstName": "Sage", "lastName": "Foo", "email": "user@foo.com", "password": "changeme", "role": "user"},
-    {"firstName": "Nathan", "lastName": "Foo", "email": "murrayn@foo.com", "password": "changeme", "role": "vendor"}
+    {"firstName": "Nathan", "lastName": "Foo", "email": "murrayn@foo.com", "password": "changeme", "role": "user"}
   ],
 
   "defaultData": [
@@ -22,10 +22,10 @@
   ],
 
   "defaultOrders": [
-    { "firstName": "John", "lastName": "Doe", "email": "john@foo.com", "event": "Charity", "location": "john@foo.com", "containers": "50" },
-    { "firstName": "Bob", "lastName": "Dot", "email": "john@foo.com", "event": "Fundraiser", "location": "john@foo.com", "containers": "100" },
-    { "firstName": "Hal", "lastName": "Rob", "email": "admin@foo.com", "event": "Dinner", "location": "john@foo.com", "containers": "10" },
-    { "firstName": "Jen", "lastName": "Doe", "email": "admin@foo.com", "event": "Birthday", "location": "john@foo.com", "containers": "25" }
+    { "firstName": "John", "lastName": "Doe", "email": "john@foo.com", "event": "Charity", "location": "Kalihi", "containers": "50" },
+    { "firstName": "Bob", "lastName": "Dot", "email": "john@foo.com", "event": "Fundraiser", "location": "Kapolei", "containers": "100" },
+    { "firstName": "Hal", "lastName": "Rob", "email": "admin@foo.com", "event": "Dinner", "location": "Waipahu", "containers": "10" },
+    { "firstName": "Jen", "lastName": "Doe", "email": "admin@foo.com", "event": "Birthday", "location": "Ala Moana", "containers": "25" }
   ]
 
 }
