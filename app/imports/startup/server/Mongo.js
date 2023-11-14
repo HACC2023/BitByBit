@@ -34,7 +34,7 @@ if (Containers.collection.find().count() === 0) {
 }
 
 const addVendorOrder = (data) => {
-  console.log(`  Adding: ${data.owner} (${data.size})`);
+  console.log(`  Adding: ${data.firstName} (${data.email})`);
   VendorOrder.collection.insert(data);
 };
 
