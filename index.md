@@ -72,7 +72,7 @@ The landing page is presented to users when they first visit the site. It provid
 
 <img src="doc/landing-page.png" alt="" style="padding-top: 5px; padding-bottom: 50px">
 
-### UserRegistration Page
+### User Registration Page
 
 To order the reusable containers at events, users must sign up by clicking on the "Sign up" dropdown menu in the upper right corner of the navbar. This registers the user into a system at a certain event and generates a QR code to act as an "ID" for the event.
 
