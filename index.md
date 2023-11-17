@@ -9,9 +9,9 @@
     * [Flowchart](#application-flowchart)
 * [Deployment](#deployment)
 * [User Guide](#user-guide)
-* [Team](#team)
+* [Team](#team-bitbybit)
 * [Developer Guide](#developer-guide)
-  * [Installation](#Installation)
+  * [Installation](#installation)
 
 ## Overview
 
