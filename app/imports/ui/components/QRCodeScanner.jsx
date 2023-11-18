@@ -101,22 +101,20 @@ const QrCodeScanner = () => {
     });
   };
 
-  const [scan, setScan] = useState('test');
-  const [selection, setSelection] = useState('test');
+  const [scan] = useState('test21');
+  const [selection, setSelection] = useState('hi');
 
   const submit = (msgResult) => {
-    console.log(msgResult);
-    if (msgResult === 'scan-container') {
+    console.log(selection);
+    console.log(scan);
+    if (msgResult === 'container') {
       swal('Success', 'Assigned container to: THOMAS (trivera2@goo.com)', 'success');
     } else {
       swal('User Scan Success', 'Name: THOMAS', 'success');
     }
   };
 
-  const handleOnClick = () => {
-    setScan(selection);
-    return submit(scan);
-  };
+  const handleOnClick = () => submit(selection);
 
   const handleSelectionChange = (e) => {
     setSelection(e.currentTarget.value);
@@ -135,8 +133,8 @@ const QrCodeScanner = () => {
             <Button className="button" id="startButton">Start</Button>
             <Button className="button" id="resetButton">Reset</Button>
             <Form.Select aria-label="Default select example" value={selection} onChange={handleSelectionChange}>
-              <option value="scan-user">Add Container</option>
-              <option value="scan-container">Scan User</option>
+              <option value="container">Add Container</option>
+              <option value="user">Scan User</option>
             </Form.Select>
           </Col>
         </Row>
